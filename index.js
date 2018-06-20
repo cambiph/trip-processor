@@ -7,21 +7,21 @@ import {
 import {
     argv
 } from 'yargs';
+import {emptyDir} from 'fs-extra';
 
 if (!argv.input) {
     console.log('No input file set. Use npm start -- --input=<path>');
     process.exit(1);
 }
 
-unlink('output/output.csv', (err) => {
-    console.log('Cleaning up output file ...')
+emptyDir('output', (err) => {
     if (err) {
-        console.log('Failed to clean output file!');
+        console.log('Unable to clean output directory!');
         process.exit(1);
     }
 });
 
-let writeStream = createWriteStream('output.csv', {
+let writeStream = createWriteStream('output/output.csv', {
     flags: 'ax',
 });
 
