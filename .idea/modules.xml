@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/csv-proccesor.iml" filepath="$PROJECT_DIR$/.idea/csv-proccesor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/trip-proccesor.iml" filepath="$PROJECT_DIR$/.idea/trip-proccesor.iml" />
     </modules>
   </component>
 </project>
